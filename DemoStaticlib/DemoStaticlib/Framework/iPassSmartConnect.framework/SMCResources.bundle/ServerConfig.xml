@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ServerConfig>
+    <ProfileServer>https://om-updater.ipass.com/</ProfileServer>
+    <DataCollectorServer>https://om-datacollector.ipass.com/</DataCollectorServer>
+    <ActivationServer>https://om-activation.ipass.com/</ActivationServer>
+    <HotspotFinderDefaultHostName>https://api.wifilookup.com/</HotspotFinderDefaultHostName>
+    <AidServer>https://om-datacollector.ipass.com/</AidServer>
+    <OAAServer>https://openaccess.gslb.ipass.com/</OAAServer>
+    <RemotePushServer>https://omns.ipass.com/</RemotePushServer>
+    <KronosServer>https://k.ipass.com/</KronosServer>
+    <KronosDnsServer>kr0.io</KronosDnsServer>
+<RtnDnsServer>r.ipass.com/</RtnDnsServer>
+<RtnKeyExchangeServer>https://r.ipass.com/eccdh/</RtnKeyExchangeServer>
+<RtnCdbUploadServer>https://a.r.ipass.com/v2/updateAfterSuccess/</RtnCdbUploadServer>
+<LogServiceServer>https://logservices.ipass.com/</LogServiceServer>
+<X8021xServer>https://www.wificonfig.io/eap/</X8021xServer>
+<OneClickActivationServer>https://openmobile.ipass.com/</OneClickActivationServer>
+<DefaultProfileID>17574</DefaultProfileID>
+<DefaultCompanyID>1043068</DefaultCompanyID>
+</ServerConfig>

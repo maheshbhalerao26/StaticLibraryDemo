@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>iPass SmartConnect</string>
+	<key>PayloadIdentifier</key>
+	<string>administrators-MacBook-Pro-3.612C0B6A-7744-45F9-A69F-C4EA96B10BD5</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>437870DC-A331-4806-A703-5B21ED6E9D8A</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

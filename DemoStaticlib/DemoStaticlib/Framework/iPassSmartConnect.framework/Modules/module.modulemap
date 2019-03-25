@@ -1,0 +1,11 @@
+framework module iPassSmartConnect {
+  umbrella header "iPassSmartConnect.h"
+
+  export *
+  module * { export * }
+}
+
+module iPassSmartConnect.Swift {
+    header "iPassSmartConnect-Swift.h"
+    requires objc
+}

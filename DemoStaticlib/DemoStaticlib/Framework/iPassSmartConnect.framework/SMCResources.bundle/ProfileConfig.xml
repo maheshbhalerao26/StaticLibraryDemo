@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProfileConfig>
+  <!-- Profile Server -->
+  <ProfileFinderURL>@ACTIVATION_SERVER/aca/proxy/findprofile</ProfileFinderURL>
+  <ActivationLoginURL>@ACTIVATION_SERVER/aca/proxy/login</ActivationLoginURL>
+  <LoginURL>@PROFILE_SERVER/moupdates/login</LoginURL>
+  <UpdateURL>@ACTIVATION_SERVER/aca/proxy/update</UpdateURL>
+  <ActivationConfirmationURL>@PROFILE_SERVER/moupdates/rest/api/ipass/102/mo/activationservice/findprofile?action=activationConfirmation</ActivationConfirmationURL>
+
+  <!-- Data Collector Server-->
+  <SQMClientURL>@DATA_COLLECTOR_SERVER/datacollector/rest/sqmservice/client-list</SQMClientURL>
+  <SQMConnectionQualityURL>@DATA_COLLECTOR_SERVER/datacollector/rest/sqmservice/sqm-list</SQMConnectionQualityURL>
+  <SQMDeviceURL>@DATA_COLLECTOR_SERVER/datacollector/rest/sqmservice/device-list</SQMDeviceURL>
+  <SQMConnectionURL>@DATA_COLLECTOR_SERVER/datacollector/rest/sqmservice/connection-list</SQMConnectionURL>
+  <SQM>@DATA_COLLECTOR_SERVER/datacollector/rest/sqmservice/sqm-list</SQM>
+  
+  <!-- AId Server-->
+  <AIDFeed>@AID_SERVER/datacollector/rest/feeds/aid</AIDFeed>
+
+  <!-- Activation Server-->
+  <ActivationServerURL>@ACTIVATION_SERVER/ClientActivation/init.go</ActivationServerURL>
+
+  <!-- dialerID Server-->
+  <DialerIDServerURL>@ACTIVATION_SERVER/aca/v1/dialerId</DialerIDServerURL>
+  
+  <!-- Token Activation -->
+  <SDKActivationURL>@ACTIVATION_SERVER/aca/sdk/v1/activate</SDKActivationURL>
+  
+  <!-- schema Server -->
+  <SchemeURL>@ACTIVATION_SERVER/aca/sdk/v1/configurations</SchemeURL>
+
+  
+  <SDKVoucherActivationURL>@ACTIVATION_SERVER/aca/sdk/v1/redeemVoucher</SDKVoucherActivationURL>
+
+
+  <!-- ACA Migration Server-->
+  <ACAMigrationServerURL>@ACTIVATION_SERVER/aca/v1/migrate</ACAMigrationServerURL>
+  <ACAMigrationReIssueURL>@ACTIVATION_SERVER/aca/v2/reissue</ACAMigrationReIssueURL>
+
+  <!-- User Authorization Server -->
+  <UserAuthorizationURL>@PROFILE_SERVER/moupdates/rest/api/ipass/102/mo/authorizationservice/check</UserAuthorizationURL>
+  
+  <!-- Push server registration url -->
+  <PushRegistrationURL>@REMOTE_PUSH_SERVER/PushRegistration/regclient.go</PushRegistrationURL>
+  
+  <!-- Push server registration url -->
+  <PushAcknowledgementURL>@REMOTE_PUSH_SERVER/PushRegistration/acknowledge.go</PushAcknowledgementURL>
+  
+  <!-- Push server registration url -->
+  <DynamicCodeValidationURL>@ACTIVATION_SERVER/ClientActivation/validatecode.go</DynamicCodeValidationURL>
+  <DynamicTokenValidationURL>@ACTIVATION_SERVER/ClientActivation/validatetoken.go</DynamicTokenValidationURL>
+  
+  <!-- DEvice Registration Check -->
+  <DeviceRegistrationCheckURL>@ACTIVATION_SERVER/aca/v3/checkdevice</DeviceRegistrationCheckURL>
+  
+  <!-- Kronos url -->  
+  <AccessPointQueryURL>@KRONOS_SERVER/the/ap/accessPointQuery/f1</AccessPointQueryURL>
+  <AccessPointKeyExchangeURL>@KRONOS_SERVER/the/ap/keyExchange/f1</AccessPointKeyExchangeURL>
+  <AccessPointDnsHost>@KRONOS_DNS_SERVER/</AccessPointDnsHost>
+  
+  <!-- RTN Servers -->
+  <RtnDnsHost>@RTN_DNS_HOST/</RtnDnsHost>
+  <RtnKeyExchangeURL>@RTN_KEY_EXCHANGE_SERVER/eccdh</RtnKeyExchangeURL>
+  <RtnCdbUploadURL>@RTN_CDB_UPLOAD_SERVER/v2/updateAfterSuccess</RtnCdbUploadURL>
+  
+  <!-- Hostpot Feedback URL -->
+  <HotspotReportURL>@HOTSPOT_FINDER_HOSTNAME/submituserhotspotreport</HotspotReportURL>
+
+  <!-- Check credentials URL -->
+  <CredentialsCheckURL>@ACTIVATION_SERVER/aca/v1/check</CredentialsCheckURL>
+  
+  <!-- Devicescape Registration Check -->
+  <DevicescapeRegistrationURL>@ACTIVATION_SERVER/aca/v1/dsregister</DevicescapeRegistrationURL>
+
+
+  <!-- ISEEL Verification URL -->
+  <ISEELVerificationURL>@PROFILE_SERVER/moupdates/rest/api/ipass/102/mo/authenticationservice/verifyiSEEL</ISEELVerificationURL>
+
+  <!-- One click cookie read URL -->
+  <OneClickActivationCookieReadURL>@ONE_CLICK_ACTIVATION_SERVER/euservices/activation/#/oneClick</OneClickActivationCookieReadURL>
+
+  <!-- Log Analysis Server APIs -->
+  <LogServiceURL>@LOG_ANALYSIS_SERVER/logcollector/api/v1/ticket</LogServiceURL>
+  
+   <!-- 8021x Token Server APIs -->
+  <X8021xTokenURL>@X8021X_SERVER/api/profile?token=</X8021xTokenURL>
+  
+   <!-- 8021x Instal Server APIs -->
+  <X8021xInstalURL>@X8021X_SERVER/?url=</X8021xInstalURL>
+  
+   <!-- 8021x Hello Server APIs -->
+  <X8021xHellolURL>@X8021X_SERVER/api/hello</X8021xHellolURL>
+  
+  <!-- RogueHotpost Server APIs -->
+  <AmiPassValidateURL>@AM_IPASS_SERVER/amipass/rest/session/validate</AmiPassValidateURL>
+  
+  <!-- Open Access Authenticator Server APIs -->
+  <OAAuthServiceStartURL>@OAA_SERVER/oaa/rest/v1/auth-request</OAAuthServiceStartURL>
+  <OAAuthServiceStopURL>@OAA_SERVER/oaa/rest/v1/session-stop</OAAuthServiceStopURL>
+
+</ProfileConfig>

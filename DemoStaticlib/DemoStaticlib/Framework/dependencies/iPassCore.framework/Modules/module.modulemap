@@ -1,0 +1,11 @@
+framework module iPassCore {
+  umbrella header "iPassCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module iPassCore.Swift {
+    header "iPassCore-Swift.h"
+    requires objc
+}
