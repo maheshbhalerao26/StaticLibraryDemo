@@ -18,6 +18,7 @@
 		B23FFD2C2248B3FB00B421DA /* Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD252248B3FB00B421DA /* Connect.framework */; };
 		B23FFD2D2248B3FB00B421DA /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD262248B3FB00B421DA /* FMDB.framework */; };
 		B23FFD452248D12F00B421DA /* MyConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */; };
+		B23FFD48224CA53300B421DA /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23FFD47224CA53300B421DA /* Wifi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		B23FFD262248B3FB00B421DA /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDB.framework; sourceTree = "<group>"; };
 		B23FFD432248D12F00B421DA /* MyConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConnectionDelegate.h; sourceTree = "<group>"; };
 		B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConnectionDelegate.m; sourceTree = "<group>"; };
+		B23FFD46224CA53200B421DA /* DemoStaticlib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoStaticlib-Bridging-Header.h"; sourceTree = "<group>"; };
+		B23FFD47224CA53300B421DA /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				B23FFD0E2240C2BE00B421DA /* DemoStaticlib.m */,
 				B23FFD432248D12F00B421DA /* MyConnectionDelegate.h */,
 				B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */,
+				B23FFD47224CA53300B421DA /* Wifi.swift */,
+				B23FFD46224CA53200B421DA /* DemoStaticlib-Bridging-Header.h */,
 			);
 			path = DemoStaticlib;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				TargetAttributes = {
 					B23FFD092240C2BE00B421DA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -177,6 +183,7 @@
 			files = (
 				B23FFD452248D12F00B421DA /* MyConnectionDelegate.m in Sources */,
 				B23FFD0F2240C2BE00B421DA /* DemoStaticlib.m in Sources */,
+				B23FFD48224CA53300B421DA /* Wifi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,15 +305,24 @@
 		B23FFD142240C2BE00B421DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework/dependencies",
 				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoStaticlib/DemoStaticlib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -314,15 +330,23 @@
 		B23FFD152240C2BE00B421DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework/dependencies",
 				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoStaticlib/DemoStaticlib-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

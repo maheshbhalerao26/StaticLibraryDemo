@@ -11,6 +11,5 @@
 #import <iPassSmartConnect/iPassSmartConnect.h>
 
 @interface DemoStaticlib : NSObject
-//+(void)greet:(NSString *)name;
-  @property (nonatomic, strong)MyConnectionDelegate* connectionDelegate;
+    @property (nonatomic, strong)MyConnectionDelegate* connectionDelegate;
 @end
