@@ -339,6 +339,7 @@ SWIFT_PROTOCOL_NAMED("HttpWorker") SWIFT_AVAILABILITY(ios,introduced=9.0)
 /// error and do no include server side errors.
 ///
 - (BOOL)send:(SMCHttpRequest * _Nonnull)request success:(void (^ _Nonnull)(SMCHttpRequest * _Nonnull, SMCHttpResponse * _Nonnull))success error:(void (^ _Nonnull)(SMCHttpRequest * _Nonnull, SMCHttpError * _Nonnull))error;
+- (BOOL)sendSQM:(SMCHttpRequest * _Nonnull)request success:(void (^ _Nonnull)(SMCHttpRequest * _Nonnull, SMCHttpResponse * _Nonnull))success error:(void (^ _Nonnull)(SMCHttpRequest * _Nonnull, SMCHttpError * _Nonnull))error cancelOldRequest:(BOOL)cancelOldRequest;
 /// Cancels an alreay in progress SMCHttpRequest if there’s one. If there’s a request
 /// in progress then cancels it and returns true, if there’s no request in progress then also
 /// it returns true, in all other cases this function returns false.
@@ -459,6 +460,7 @@ SWIFT_CLASS_NAMED("SMCBackgroundTaskManager") SWIFT_AVAILABILITY(ios,introduced=
 
 SWIFT_CLASS_NAMED("SMCCaptivePluginFactory") SWIFT_AVAILABILITY(ios,introduced=9.0)
 @interface SMCCaptivePluginFactory : NSObject
++ (id <CaptivePluggable> _Nonnull)createPluginWith:(id <CaptivePluginHandler> _Nonnull)pluginHandler SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=9.0);
 @end
 

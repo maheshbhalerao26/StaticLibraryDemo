@@ -37,19 +37,19 @@
     switch (reason) {
         case SMCUIRequiredReasonRequiresAppInForeground:
             if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
-//                NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
-//                UILocalNotification *localNotification = [UILocalNotification new];
-//                localNotification.alertBody = [NSString stringWithFormat:@"Please launch %@ for connection",appName];
-//                [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+                NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+                UILocalNotification *localNotification = [UILocalNotification new];
+                localNotification.alertBody = [NSString stringWithFormat:@"Please launch %@ for connection",appName];
+                [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
             }
             break;
             
         case SMCUIRequiredReasonRequiresManualConnect:
             if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
-//                NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
-//                UILocalNotification *localNotification = [UILocalNotification new];
-//                localNotification.alertBody = [NSString stringWithFormat:@"Please launch %@ for connection",appName];
-//                [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+                NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+                UILocalNotification *localNotification = [UILocalNotification new];
+                localNotification.alertBody = [NSString stringWithFormat:@"Please launch %@ for connection",appName];
+                [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
             }
             break;
         default:

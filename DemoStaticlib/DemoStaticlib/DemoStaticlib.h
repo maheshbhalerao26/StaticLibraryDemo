@@ -11,5 +11,8 @@
 #import <iPassSmartConnect/iPassSmartConnect.h>
 
 @interface DemoStaticlib : NSObject
-    @property (nonatomic, strong)MyConnectionDelegate* connectionDelegate;
++(void)greet:(NSString *)name;
++(void)intiSDK:(NSString *) APIKey;
++(void)activateVoucherService:(NSString *)voucherCode successHandler: (void(^)(NSDictionary* resultDict))successHandler ErrorHandler: (void(^)(NSError *error, NSString *errorMessage))ErrorHandler;
++(void)activateVoucherUsingBIN:(NSString *)bin uuid: (NSString*)uuid successHandler: (void(^)(NSDictionary* resultDict))successHandler ErrorHandler: (void(^)(NSError *error, NSString *errorMessage))ErrorHandler;
 @end

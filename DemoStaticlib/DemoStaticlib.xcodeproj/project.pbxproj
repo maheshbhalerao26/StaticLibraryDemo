@@ -7,27 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23F00E02254B87300B421DA /* Connect.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD83224E201200B421DA /* Connect.framework */; };
+		B23F00E12254B87300B421DA /* FMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD88224E201500B421DA /* FMDB.framework */; };
+		B23F00E22254B87300B421DA /* iPassCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD85224E201300B421DA /* iPassCore.framework */; };
+		B23F00E32254B87300B421DA /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD82224E201200B421DA /* ObjectMapper.framework */; };
+		B23F00E42254B87300B421DA /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD87224E201400B421DA /* Realm.framework */; };
+		B23F00E52254B87300B421DA /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD86224E201400B421DA /* RealmSwift.framework */; };
+		B23F00E62254B87300B421DA /* ZipArchive.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD84224E201300B421DA /* ZipArchive.framework */; };
+		B23F00E72254B87A00B421DA /* iPassSmartConnect.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD80224E200100B421DA /* iPassSmartConnect.framework */; };
 		B23FFD0F2240C2BE00B421DA /* DemoStaticlib.m in Sources */ = {isa = PBXBuildFile; fileRef = B23FFD0E2240C2BE00B421DA /* DemoStaticlib.m */; };
 		B23FFD102240C2BE00B421DA /* DemoStaticlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD0D2240C2BE00B421DA /* DemoStaticlib.h */; };
-		B23FFD1F2248B3E000B421DA /* iPassSmartConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD1E2248B3E000B421DA /* iPassSmartConnect.framework */; };
-		B23FFD272248B3FB00B421DA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD202248B3F900B421DA /* RealmSwift.framework */; };
-		B23FFD282248B3FB00B421DA /* iPassCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD212248B3FA00B421DA /* iPassCore.framework */; };
-		B23FFD292248B3FB00B421DA /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD222248B3FA00B421DA /* ObjectMapper.framework */; };
-		B23FFD2A2248B3FB00B421DA /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD232248B3FA00B421DA /* ZipArchive.framework */; };
-		B23FFD2B2248B3FB00B421DA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD242248B3FB00B421DA /* Realm.framework */; };
-		B23FFD2C2248B3FB00B421DA /* Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD252248B3FB00B421DA /* Connect.framework */; };
-		B23FFD2D2248B3FB00B421DA /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD262248B3FB00B421DA /* FMDB.framework */; };
 		B23FFD452248D12F00B421DA /* MyConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */; };
-		B23FFD48224CA53300B421DA /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23FFD47224CA53300B421DA /* Wifi.swift */; };
+		B23FFD81224E200200B421DA /* iPassSmartConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD80224E200100B421DA /* iPassSmartConnect.framework */; };
+		B23FFD89224E201500B421DA /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD82224E201200B421DA /* ObjectMapper.framework */; };
+		B23FFD8A224E201500B421DA /* Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD83224E201200B421DA /* Connect.framework */; };
+		B23FFD8B224E201500B421DA /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD84224E201300B421DA /* ZipArchive.framework */; };
+		B23FFD8C224E201500B421DA /* iPassCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD85224E201300B421DA /* iPassCore.framework */; };
+		B23FFD8D224E201500B421DA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD86224E201400B421DA /* RealmSwift.framework */; };
+		B23FFD8E224E201500B421DA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD87224E201400B421DA /* Realm.framework */; };
+		B23FFD8F224E201500B421DA /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FFD88224E201500B421DA /* FMDB.framework */; };
+		B23FFD90224E212700B421DA /* MyConnectionDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B23FFD432248D12F00B421DA /* MyConnectionDelegate.h */; };
+		B23FFF4422535CB500B421DA /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = B23FFF4322535CB500B421DA /* BaseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B23FFD082240C2BE00B421DA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				B23F00E72254B87A00B421DA /* iPassSmartConnect.framework in CopyFiles */,
+				B23F00E02254B87300B421DA /* Connect.framework in CopyFiles */,
+				B23F00E12254B87300B421DA /* FMDB.framework in CopyFiles */,
+				B23F00E22254B87300B421DA /* iPassCore.framework in CopyFiles */,
+				B23F00E32254B87300B421DA /* ObjectMapper.framework in CopyFiles */,
+				B23F00E42254B87300B421DA /* Realm.framework in CopyFiles */,
+				B23F00E52254B87300B421DA /* RealmSwift.framework in CopyFiles */,
+				B23F00E62254B87300B421DA /* ZipArchive.framework in CopyFiles */,
+				B23FFD90224E212700B421DA /* MyConnectionDelegate.h in CopyFiles */,
 				B23FFD102240C2BE00B421DA /* DemoStaticlib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,18 +56,18 @@
 		B23FFD0A2240C2BE00B421DA /* libDemoStaticlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemoStaticlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23FFD0D2240C2BE00B421DA /* DemoStaticlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoStaticlib.h; sourceTree = "<group>"; };
 		B23FFD0E2240C2BE00B421DA /* DemoStaticlib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoStaticlib.m; sourceTree = "<group>"; };
-		B23FFD1E2248B3E000B421DA /* iPassSmartConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iPassSmartConnect.framework; sourceTree = "<group>"; };
-		B23FFD202248B3F900B421DA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		B23FFD212248B3FA00B421DA /* iPassCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iPassCore.framework; sourceTree = "<group>"; };
-		B23FFD222248B3FA00B421DA /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
-		B23FFD232248B3FA00B421DA /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipArchive.framework; sourceTree = "<group>"; };
-		B23FFD242248B3FB00B421DA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		B23FFD252248B3FB00B421DA /* Connect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Connect.framework; sourceTree = "<group>"; };
-		B23FFD262248B3FB00B421DA /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDB.framework; sourceTree = "<group>"; };
 		B23FFD432248D12F00B421DA /* MyConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConnectionDelegate.h; sourceTree = "<group>"; };
 		B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConnectionDelegate.m; sourceTree = "<group>"; };
-		B23FFD46224CA53200B421DA /* DemoStaticlib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoStaticlib-Bridging-Header.h"; sourceTree = "<group>"; };
-		B23FFD47224CA53300B421DA /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
+		B23FFD80224E200100B421DA /* iPassSmartConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iPassSmartConnect.framework; sourceTree = "<group>"; };
+		B23FFD82224E201200B421DA /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		B23FFD83224E201200B421DA /* Connect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Connect.framework; sourceTree = "<group>"; };
+		B23FFD84224E201300B421DA /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipArchive.framework; sourceTree = "<group>"; };
+		B23FFD85224E201300B421DA /* iPassCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iPassCore.framework; sourceTree = "<group>"; };
+		B23FFD86224E201400B421DA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		B23FFD87224E201400B421DA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		B23FFD88224E201500B421DA /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDB.framework; sourceTree = "<group>"; };
+		B23FFF4222535CB500B421DA /* BaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		B23FFF4322535CB500B421DA /* BaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +75,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23FFD2B2248B3FB00B421DA /* Realm.framework in Frameworks */,
-				B23FFD272248B3FB00B421DA /* RealmSwift.framework in Frameworks */,
-				B23FFD1F2248B3E000B421DA /* iPassSmartConnect.framework in Frameworks */,
-				B23FFD2D2248B3FB00B421DA /* FMDB.framework in Frameworks */,
-				B23FFD2C2248B3FB00B421DA /* Connect.framework in Frameworks */,
-				B23FFD292248B3FB00B421DA /* ObjectMapper.framework in Frameworks */,
-				B23FFD282248B3FB00B421DA /* iPassCore.framework in Frameworks */,
-				B23FFD2A2248B3FB00B421DA /* ZipArchive.framework in Frameworks */,
+				B23FFD89224E201500B421DA /* ObjectMapper.framework in Frameworks */,
+				B23FFD8B224E201500B421DA /* ZipArchive.framework in Frameworks */,
+				B23FFD8D224E201500B421DA /* RealmSwift.framework in Frameworks */,
+				B23FFD8F224E201500B421DA /* FMDB.framework in Frameworks */,
+				B23FFD8C224E201500B421DA /* iPassCore.framework in Frameworks */,
+				B23FFD8E224E201500B421DA /* Realm.framework in Frameworks */,
+				B23FFD81224E200200B421DA /* iPassSmartConnect.framework in Frameworks */,
+				B23FFD8A224E201500B421DA /* Connect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +113,8 @@
 				B23FFD0E2240C2BE00B421DA /* DemoStaticlib.m */,
 				B23FFD432248D12F00B421DA /* MyConnectionDelegate.h */,
 				B23FFD442248D12F00B421DA /* MyConnectionDelegate.m */,
-				B23FFD47224CA53300B421DA /* Wifi.swift */,
-				B23FFD46224CA53200B421DA /* DemoStaticlib-Bridging-Header.h */,
+				B23FFF4222535CB500B421DA /* BaseService.h */,
+				B23FFF4322535CB500B421DA /* BaseService.m */,
 			);
 			path = DemoStaticlib;
 			sourceTree = "<group>";
@@ -104,7 +122,7 @@
 		B23FFD1C2248B3CF00B421DA /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B23FFD1E2248B3E000B421DA /* iPassSmartConnect.framework */,
+				B23FFD80224E200100B421DA /* iPassSmartConnect.framework */,
 				B23FFD1D2248B3CF00B421DA /* dependencies */,
 			);
 			path = Framework;
@@ -113,13 +131,13 @@
 		B23FFD1D2248B3CF00B421DA /* dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				B23FFD252248B3FB00B421DA /* Connect.framework */,
-				B23FFD262248B3FB00B421DA /* FMDB.framework */,
-				B23FFD212248B3FA00B421DA /* iPassCore.framework */,
-				B23FFD222248B3FA00B421DA /* ObjectMapper.framework */,
-				B23FFD242248B3FB00B421DA /* Realm.framework */,
-				B23FFD202248B3F900B421DA /* RealmSwift.framework */,
-				B23FFD232248B3FA00B421DA /* ZipArchive.framework */,
+				B23FFD83224E201200B421DA /* Connect.framework */,
+				B23FFD88224E201500B421DA /* FMDB.framework */,
+				B23FFD85224E201300B421DA /* iPassCore.framework */,
+				B23FFD82224E201200B421DA /* ObjectMapper.framework */,
+				B23FFD87224E201400B421DA /* Realm.framework */,
+				B23FFD86224E201400B421DA /* RealmSwift.framework */,
+				B23FFD84224E201300B421DA /* ZipArchive.framework */,
 			);
 			path = dependencies;
 			sourceTree = "<group>";
@@ -155,7 +173,6 @@
 				TargetAttributes = {
 					B23FFD092240C2BE00B421DA = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -183,7 +200,7 @@
 			files = (
 				B23FFD452248D12F00B421DA /* MyConnectionDelegate.m in Sources */,
 				B23FFD0F2240C2BE00B421DA /* DemoStaticlib.m in Sources */,
-				B23FFD48224CA53300B421DA /* Wifi.swift in Sources */,
+				B23FFF4422535CB500B421DA /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -305,24 +322,17 @@
 		B23FFD142240C2BE00B421DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework/dependencies",
 				);
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DemoStaticlib/DemoStaticlib-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -330,23 +340,16 @@
 		B23FFD152240C2BE00B421DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework",
 					"$(PROJECT_DIR)/DemoStaticlib/Framework/dependencies",
 				);
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DemoStaticlib/DemoStaticlib-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
